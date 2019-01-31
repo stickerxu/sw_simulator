@@ -1,0 +1,49 @@
+.container {
+    width: 100%;
+    min-width: 1000px;
+}
+/*对话框*/
+#dashuDialog {
+    margin: auto;
+    border: solid 1px;
+    width: 900px;
+    height: 580px;
+}
+.clearfix:after {
+    clear: both;
+}
+/*纵向三个模块*/
+#modalA,#modalB,#modalC {
+    float: left;
+    height: 100%;
+}
+#modalA,#modalB {
+    border: solid;
+    border-width: 0px 1px 0px 0px;
+}
+#modalA {
+    width: 49%;
+}
+#modalB {
+    width: 30%;
+}
+#modalC {
+    border: none;
+    width: 20%;
+}
+/*模块中的小模块*/
+#partA,partB {
+    height: 50%;
+}
+#partA {
+    border: solid;
+    border-width: 0 0 1px 0;
+}
+#partC {
+    height: 40%;
+    border: solid;
+    border-width: 0 0 1px 0;
+}
+#partD {
+    height: 59%;
+}
