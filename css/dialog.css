@@ -6,6 +6,7 @@
 #dashuDialog {
     margin: auto;
     border: solid 1px;
+    padding: 2rem;
     width: 900px;
     height: 580px;
 }
@@ -32,18 +33,36 @@
     width: 20%;
 }
 /*模块中的小模块*/
-#partA,partB {
-    height: 50%;
-}
 #partA {
+    height: 45%;
     border: solid;
     border-width: 0 0 1px 0;
 }
+#partB {
+    height: 55%;
+    padding-top: 1rem;
+}
 #partC {
     height: 40%;
+    padding: 0 10px 0px 10px;
     border: solid;
     border-width: 0 0 1px 0;
 }
 #partD {
     height: 59%;
+    padding: 10px 10px 0 10px;
+}
+
+#picture {
+    width: 50%;
+    float: left;
+}
+#introduce {
+    width: 50%;
+    float: left;
+}
+
+/*partB中文本框*/
+.text-group {
+    margin-bottom: 25px;
 }
