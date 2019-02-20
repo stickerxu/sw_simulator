@@ -1,68 +1,24 @@
-.container {
-    width: 100%;
-    min-width: 1000px;
-}
+.container {width: 100%;min-width: 1000px;}
 /*对话框*/
-#dashuDialog {
-    margin: auto;
-    border: solid 1px;
-    padding: 2rem;
-    width: 900px;
-    height: 580px;
-}
-.clearfix:after {
-    clear: both;
-}
+#dashuDialog {margin: auto;border: solid 1px;padding: 2rem;width: 900px;height: 580px;}
+.clearfix:after {clear: both;}
 /*纵向三个模块*/
-#modalA,#modalB,#modalC {
-    float: left;
-    height: 100%;
-}
-#modalA,#modalB {
-    border: solid;
-    border-width: 0px 1px 0px 0px;
-}
-#modalA {
-    width: 49%;
-}
-#modalB {
-    width: 30%;
-}
-#modalC {
-    border: none;
-    width: 20%;
-}
+#modalA,#modalB,#modalC {float: left;height: 100%;}
+#modalA,#modalB {border: solid;border-width: 0px 1px 0px 0px;}
+#modalA {width: 49%;}
+#modalB {width: 30%;}
+#modalC {border: none;width: 20%;}
 /*模块中的小模块*/
-#partA {
-    height: 45%;
-    border: solid;
-    border-width: 0 0 1px 0;
-}
-#partB {
-    height: 55%;
-    padding-top: 1rem;
-}
-#partC {
-    height: 40%;
-    padding: 0 10px 0px 10px;
-    border: solid;
-    border-width: 0 0 1px 0;
-}
-#partD {
-    height: 59%;
-    padding: 10px 10px 0 10px;
-}
+#partA {height: 45%;border: solid;border-width: 0 0 1px 0;}
+#partB {height: 55%;padding-top: 1rem;}
+#partC {height: 40%;padding: 0 10px 0px 10px;border: solid;border-width: 0 0 1px 0;}
+#partD {height: 59%;padding: 10px 10px 0 10px;text-align: center}
 
-#picture {
-    width: 50%;
-    float: left;
-}
-#introduce {
-    width: 50%;
-    float: left;
-}
+#picture {width: 50%;float: left;}
+#introduce {width: 50%;float: left;}
 
 /*partB中文本框*/
-.text-group {
-    margin-bottom: 25px;
-}
+.text-group {margin-bottom: 25px;}
+/*partD 格子列表*/
+#partD ul {list-style:none; padding:0px; margin:0 0 5px 0}
+#partD ul li{list-style-type: none;display: inline-block;width: 45px;height: 45px;background: cadetblue}
