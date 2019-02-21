@@ -1,6 +1,11 @@
-.container {width: 100%;min-width: 1000px;}
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+    margin: 0;
+    padding: 0;
+}
+.container {width: 100%;min-width: 1000px; margin-top: 100px}
 /*对话框*/
-#dashuDialog {margin: auto;border: solid 1px;padding: 2rem;width: 900px;height: 580px;}
+#dashuDialog {margin: auto;border: solid 1px;padding: 25px 0 0 25px;width: 900px;height: 500px;background: #267361}
+#dashuDialog label {color: #8CE8C5;font-family: SanSerif}
 .clearfix:after {clear: both;}
 /*纵向三个模块*/
 #modalA,#modalB,#modalC {float: left;height: 100%;}
@@ -10,15 +15,31 @@
 #modalC {border: none;width: 20%;}
 /*模块中的小模块*/
 #partA {height: 45%;border: solid;border-width: 0 0 1px 0;}
-#partB {height: 55%;padding-top: 1rem;}
+#partB {height: 55%;padding-top: 20px;}
 #partC {height: 40%;padding: 0 10px 0px 10px;border: solid;border-width: 0 0 1px 0;}
 #partD {height: 59%;padding: 10px 10px 0 10px;text-align: center}
 
 #picture {width: 50%;float: left;}
+#picture > img{border: 1px solid; display: block; width: 180px; height: 200px}
 #introduce {width: 50%;float: left;}
-
+#introduce #equip {margin-top: 50px;}
+#introduce #equip > img {display: inline-block;width: 45px; height: 45px; border: 1px solid;border-radius: 2px;}
+.text-group {margin-bottom: 10px}
+.text-group span {display: inline-block;text-align: center;border: none;border-radius: 2px;background: #1A5453}
 /*partB中文本框*/
-.text-group {margin-bottom: 25px;}
+#partB .text-group span {width: 120px;}
+#partB .text-group > div { width: 49%;display: inline-block}
+/*partC文本框样式*/
+#partC .text-group span {width: 170px;}
 /*partD 格子列表*/
 #partD ul {list-style:none; padding:0px; margin:0 0 5px 0}
-#partD ul li{list-style-type: none;display: inline-block;width: 45px;height: 45px;background: cadetblue}
+#partD ul li{list-style-type: none;display: inline-block;width: 50px;height: 50px;background: #2C546A;border-radius: 2px;}
+
+/*partE样式*/
+#partE {text-align: center}
+#partE > div:first-child {margin-top: 10px}
+#partE > div {margin-top: 25px}
+#partE > button {margin-top: 240px}
+#partE > div > img {display: block;margin: 0 auto;width: 50px; height: 50px;background: #2C546A;border: none;border-radius: 2px;}
+#partE > div > button {margin-top: 20px}
+.btn-primary {width: 70px;height: 22px; text-align: center;vertical-align: middle;background: #3EC99A; color: #0F4F44;border: none;border-radius: 2px; font-family: SanSerif; font-weight: bolder}
