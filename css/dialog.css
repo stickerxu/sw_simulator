@@ -23,7 +23,7 @@ a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, 
 #picture > img{border: 1px solid; display: block; width: 180px; height: 200px}
 #introduce {width: 50%;float: left;}
 #introduce #equip {margin-top: 50px;}
-#introduce #equip > img {display: inline-block;width: 45px; height: 45px; border: 1px solid;border-radius: 2px;}
+#introduce #equip > img {display: inline-block;width: 47px; height: 47px; background: #2C546A;border: none;border-radius: 2px;}
 .text-group {margin-bottom: 10px}
 .text-group span {display: inline-block;text-align: center;border: none;border-radius: 2px;background: #1A5453}
 /*partB中文本框*/
@@ -42,4 +42,5 @@ a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, 
 #partE > button {margin-top: 240px}
 #partE > div > img {display: block;margin: 0 auto;width: 50px; height: 50px;background: #2C546A;border: none;border-radius: 2px;}
 #partE > div > button {margin-top: 20px}
-.btn-primary {width: 70px;height: 22px; text-align: center;vertical-align: middle;background: #3EC99A; color: #0F4F44;border: none;border-radius: 2px; font-family: SanSerif; font-weight: bolder}
+.btn-primary {position: relative;;outline: none;width: 70px;height: 22px; text-align: center;vertical-align: middle;background: #4DD6A7; color: #0F4F44;border: none;border-radius: 2px; font-family: SanSerif; font-weight: bolder}
+.btn-primary:active {top: 2px;left: 2px; opacity: 0.5}
