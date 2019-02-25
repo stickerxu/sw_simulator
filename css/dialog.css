@@ -44,3 +44,6 @@ a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, 
 #partE > div > button {margin-top: 20px}
 .btn-primary {position: relative;;outline: none;width: 70px;height: 22px; text-align: center;vertical-align: middle;background: #4DD6A7; color: #0F4F44;border: none;border-radius: 2px; font-family: SanSerif; font-weight: bolder}
 .btn-primary:active {top: 2px;left: 2px; opacity: 0.5}
+
+/*选择框*/
+#select-modal
