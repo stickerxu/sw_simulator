@@ -1,11 +1,27 @@
-a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+a, table,thead,tr,th,td, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset,
+font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small,
+span, strong, u, ul, var {
     margin: 0;
     padding: 0;
 }
-.container {width: 100%;min-width: 1000px; margin-top: 100px}
+.container {width: 100%;min-width: 1000px; margin-top: 100px;font-family: SanSerif}
+/*按钮盒子*/
+.btn-box {cursor: default; width: 70px; display: inline-block; cursor: default}
+/*按钮样式*/
+.btn-primary, .btn-warning {outline: none;width: 70px;height: 22px; text-align: center;vertical-align: middle;background: linear-gradient(to bottom, #6DD9A6, #23AF95); color: #186050;border: none;border-radius: 2px; font-family: SanSerif; font-weight: bolder;box-shadow: 0 3px 10px #185C4E}
+.btn-primary:active, .btn-warning:active {opacity: 0.7}
+.btn-warning {background: linear-gradient(to bottom, #DFB548, #ECD653); color: #7F591D}
+/*径向渐变分割线*/
+.separate-line {height: 3px; margin: 8px 0; background: radial-gradient(#216C5A, transparent, transparent)}
+/*边框标记箭头*/
+.sign-bottom {width: 0; height: 0; border-top: 5px solid black; border-bottom: 5px solid transparent; border-left: 5px solid transparent; border-right: 5px solid transparent; margin: 0 auto;}
+.sign-top {width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid black; border-left: 5px solid transparent; border-right: 5px solid transparent; margin: 0 auto}
+.sign-left {width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid black; border-left: 5px solid transparent; border-right: 5px solid black; margin: 0 auto}
+.sign-right {width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid black; border-left: 5px solid black; border-right: 5px solid transparent; margin: 0 auto}
+
 /*对话框*/
 #dashuDialog {margin: auto;border: solid 1px;padding: 25px 0 0 25px;width: 900px;height: 500px;background: #267361}
-#dashuDialog label {color: #8CE8C5;font-family: SanSerif}
+#dashuDialog label {color: #8CE8C5}
 .clearfix:after {clear: both;}
 /*纵向三个模块*/
 #modalA,#modalB,#modalC {float: left;height: 100%;}
@@ -42,8 +58,15 @@ a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, 
 #partE > button {margin-top: 240px}
 #partE > div > img {display: block;margin: 0 auto;width: 50px; height: 50px;background: #2C546A;border: none;border-radius: 2px;}
 #partE > div > button {margin-top: 20px}
-.btn-primary {position: relative;;outline: none;width: 70px;height: 22px; text-align: center;vertical-align: middle;background: #4DD6A7; color: #0F4F44;border: none;border-radius: 2px; font-family: SanSerif; font-weight: bolder}
-.btn-primary:active {top: 2px;left: 2px; opacity: 0.5}
 
 /*选择框*/
-#select-modal
+#select-modal {width: 320px; height: 430px; border: 1px solid; margin: 100px auto; text-align: center; padding: 10px 10px; background: linear-gradient(to bottom, #258B6B, #247A62)}
+#select-modal .btn-group {margin-top: 5px}
+#select-modal .btn-group button {height: 25px}
+.table-pet {width: 100%; border: 1px solid #247E5E; border-collapse: collapse; table-layout: fixed; color: #D0DBDA; line-height: 30px; cursor: default}
+.table-pet tr:nth-child(odd) {background: #18534A}
+.table-pet tr:nth-child(even) {background: #1C5F55}
+.table-pet tr:hover {background: #298D56; outline: #66D676 solid 2px; -moz-outline-radius: 2px}
+.table-pet-title {margin-bottom: 2px; line-height: 20px;width: 100%; border: 1px solid #247E5E; border-collapse: collapse; table-layout: fixed; color: #D0DBDA; cursor: default}
+.table-pet-title tr {background: linear-gradient(to bottom, #439160, #247E5E); color: #90D5AA}
+
