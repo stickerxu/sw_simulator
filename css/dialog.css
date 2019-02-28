@@ -1,11 +1,37 @@
-a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+a, table,thead,tr,th,td, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset,
+font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small,
+span, strong, u, ul, var {
     margin: 0;
     padding: 0;
 }
-.container {width: 100%;min-width: 1000px; margin-top: 100px}
+.d-none {display: none}
+.d-block {display: block}
+.v-hidden {visibility: hidden}
+.container {width: 100%;min-width: 1000px; margin-top: 100px;font-family: SanSerif}
+/*径向渐变分割线*/
+.separate-line {height: 4px; margin: 8px 0; background: radial-gradient(#216C5A, transparent, transparent)}
+/*按钮样式*/
+.btn-primary, .btn-warning {outline: none;width: 70px;height: 22px; text-align: center;vertical-align: middle;background: linear-gradient(to bottom, #6DD9A6, #23AF95); color: #186050;border: none;border-radius: 2px; font-family: SanSerif; font-weight: bolder;box-shadow: 0 3px 10px #185C4E}
+.btn-warning {background: linear-gradient(to bottom, #DFB548, #ECD653); color: #7F591D}
+.btn-primary:active, .btn-warning:active {opacity: 0.7}
+.btn-primary:hover {background: linear-gradient(to bottom, #45DB92, #6CF7AE)}
+.btn-warning:hover {background: linear-gradient(to bottom, #45DB92, #6CF7AE)}
+/*边框标记箭头,默认居中位置*/
+.sign-bottom {position: absolute; left: 50%; margin-left: -5px; width: 0; height: 0; border-top: 5px solid #23AF95; border-bottom: 5px solid transparent; border-left: 5px solid transparent; border-right: 5px solid transparent;}
+.sign-top {position: absolute; left: 50%; margin-left: -5px; width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid #23AF95; border-left: 5px solid transparent; border-right: 5px solid transparent;}
+.sign-left {position: absolute; left: 50%; margin-left: -5px; width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid transparent; border-right: 5px solid #23AF95;}
+.sign-right {position: absolute; left: 50%; margin-left: -5px; width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid #23AF95; border-right: 5px solid transparent;}
+/*按钮盒子*/
+.btn-box {cursor: default; width: 70px; display: inline-block; cursor: default; position: relative}
+.btn-box-active > button:first-child {background: #56DEFA!important;}
+.btn-box-active > div.sign-bottom {border-top: 5px solid #56DEFA!important;}
+/*文本框组*/
+.text-group {margin-bottom: 10px}
+.text-group div {display: inline-block;}
+.text-group > div > div {text-align: center;border-radius: 2px;background: linear-gradient(to bottom, #20585A, #225E5E); color: #EDF2F2; box-shadow: 0 0 8px #164746 inset}
 /*对话框*/
-#dashuDialog {margin: auto;border: solid 1px;padding: 25px 0 0 25px;width: 900px;height: 500px;background: #267361}
-#dashuDialog label {color: #8CE8C5;font-family: SanSerif}
+#dashuDialog {margin: auto;border: solid 1px;padding: 15px 0 0 25px;width: 900px;height: 465px;background: linear-gradient(to bottom, #268B6B, #267361)}
+#dashuDialog label {color: #8CE8C5}
 .clearfix:after {clear: both;}
 /*纵向三个模块*/
 #modalA,#modalB,#modalC {float: left;height: 100%;}
@@ -14,33 +40,45 @@ a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, 
 #modalB {width: 30%;}
 #modalC {border: none;width: 20%;}
 /*模块中的小模块*/
-#partA {height: 45%;border: solid;border-width: 0 0 1px 0;}
-#partB {height: 55%;padding-top: 20px;}
-#partC {height: 40%;padding: 0 10px 0px 10px;border: solid;border-width: 0 0 1px 0;}
-#partD {height: 59%;padding: 10px 10px 0 10px;text-align: center}
+#partA {height: 44%}
+#partB {height: 55%; padding-top: 8px}
+#partC {height: 40%;padding: 0 10px 0px 10px;border-width: 0 0 1px 0;}
+#partD {height: 59%;padding: 0px 10px;text-align: center}
 
 #picture {width: 50%;float: left;}
-#picture > img{border: 1px solid; display: block; width: 180px; height: 200px}
+#picture > img{display: block; width: 180px; height: 200px; border-radius: 5px;}
 #introduce {width: 50%;float: left;}
-#introduce #equip {margin-top: 50px;}
+#introduce .text-group > div > div {width: 92px;background: transparent; box-shadow: none}
+#introduce #equip {margin-top: 65px;}
 #introduce #equip > img {display: inline-block;width: 47px; height: 47px; background: #2C546A;border: none;border-radius: 2px;}
-.text-group {margin-bottom: 10px}
-.text-group span {display: inline-block;text-align: center;border: none;border-radius: 2px;background: #1A5453}
+#introduce .text-group {margin: 5px 0 0}
+
 /*partB中文本框*/
-#partB .text-group span {width: 120px;}
-#partB .text-group > div { width: 49%;display: inline-block}
+#partB .text-group > div > div {width: 120px;}
+#partB .text-group > div { width: 49%}
 /*partC文本框样式*/
-#partC .text-group span {width: 170px;}
+#partC .text-group > div > div {width: 170px; box-shadow: 0 1px 3px #123B36 inset}
 /*partD 格子列表*/
-#partD ul {list-style:none; padding:0px; margin:0 0 5px 0}
-#partD ul li{list-style-type: none;display: inline-block;width: 50px;height: 50px;background: #2C546A;border-radius: 2px;}
+#partD ul {list-style:none; padding:0px; margin:1px 0}
+#partD ul li{list-style-type: none;display: inline-block;width: 50px;height: 50px;background: url("../img/icon.png") no-repeat;border-radius: 2px;}
 
 /*partE样式*/
 #partE {text-align: center}
 #partE > div:first-child {margin-top: 10px}
 #partE > div {margin-top: 25px}
-#partE > button {margin-top: 240px}
+#partE > button {margin-top: 217px}
 #partE > div > img {display: block;margin: 0 auto;width: 50px; height: 50px;background: #2C546A;border: none;border-radius: 2px;}
-#partE > div > button {margin-top: 20px}
-.btn-primary {position: relative;;outline: none;width: 70px;height: 22px; text-align: center;vertical-align: middle;background: #4DD6A7; color: #0F4F44;border: none;border-radius: 2px; font-family: SanSerif; font-weight: bolder}
-.btn-primary:active {top: 2px;left: 2px; opacity: 0.5}
+#partE > div > button {margin-top: 10px}
+
+/*选择框*/
+#select-modal {width: 320px; height: 430px; border: 1px solid; margin: 100px auto; text-align: center; padding: 10px 10px; background: linear-gradient(to bottom, #258B6B, #247A62)}
+#select-modal .btn-group {margin-top: 5px}
+#select-modal .btn-group button {height: 25px}
+#select-modal .btn-group :not(.btn-box-active) .sign-bottom {visibility: hidden}
+.table-pet {width: 100%; border: 1px solid #247E5E; border-collapse: collapse; table-layout: fixed; color: #D0DBDA; line-height: 30px; cursor: default}
+.table-pet tr:nth-child(odd) {background: #18534A}
+.table-pet tr:nth-child(even) {background: #1C5F55}
+.table-pet tr:hover {background: #298D56; outline: #66D676 solid 2px; -moz-outline-radius: 2px}
+.table-pet-title {margin-bottom: 2px; line-height: 20px;width: 100%; border: 1px solid #247E5E; border-collapse: collapse; table-layout: fixed; color: #D0DBDA; cursor: default}
+.table-pet-title tr {background: linear-gradient(to bottom, #439160, #247E5E); color: #90D5AA}
+
